@@ -36,8 +36,10 @@ git add reverse-complement.py
 git commit -m "Agregando el archivo reverse-complement.py"
 # Revisar el estado del repositorio
 git status 
-# Agregar el archivo README a doc
-
+# Agregar el archivo README a doc y controlarlo por Git
+cp /d/CienciasGenomicas/Semestre2023-2/Python/README.md .
+git add README.md
+git commit -m "Copiar el archivo README.md al repositorio doc"
 # Vincular los commits realizados a GitHub
 git remote add origin https://github.com/anagarme/PythonI.git
 # Revisar si es correcta la dirección 
