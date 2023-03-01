@@ -1,6 +1,7 @@
 # T1. Git y GitHub:  add, commits
 Ana Marisol García Mejía 
 ### Introducción 
+En la actualidad los programas informáticos son de gran utilidad para realizar una infinidad de procesos que simplifican tareas rutinarias. Para ello se desarrollan códigos fuente, los cuales atraviesan una serie de modificaciones y mejoras hasta obtener un programa funcional y eficiente. Sin embargo, al modificar un código se requiere de una documentación detallada para saber exactamente cuáles cambios se realizaron, quién lo hizo y cuándo. Ante esta necesidad surgen los controladores de versiones como Git que nos permite mantener un registro de las actualizaciones del código, permitiendo así regresar a una etapa temprana de nuestro código o incluso permite trabajar en paralelo con otros programadores. 
 ### Metodología
 
 ```
@@ -12,8 +13,8 @@ mkdir projects
 cd projects
 mkdir reverse-complement 
 cd reverse-complement 
-# Crear la estructura data docs src dentro de reverse-complement
-mkdir data doc src 
+# Crear la estructura data docs src lib dentro de reverse-complement
+mkdir data doc src lib
 # Volver al directorio principal (PythonI)
 cd ../../
 # Inicializar el repositorio
@@ -46,8 +47,10 @@ git remote add origin https://github.com/anagarme/PythonI.git
 git remote -v 
 # Exportar a GitHub todos los commits realizados
 git push origin master 
+# Por último se modificó el archivo README.md en GitHub, para traer estos cambios a nuestro controlador remoto se ejecutó: 
+git pull origin master  
 
 ```
 
 ### Resultados 
-### Conclusiones 
+Los resultados se muestran en el repositorio PythonI en GitHub. Para más información consultar mi repositorio https://github.com/anagarme/PythonI.git
