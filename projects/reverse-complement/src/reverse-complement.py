@@ -6,7 +6,7 @@ VERSION
     1.0
     
 AUTHOR
-    Ana Marisol, Diego, Camila	
+    Ana Marisol, Diego, Camila, Ethan	
     
 DESCRIPTION
 	Make the reverse complement of DNA sequence
