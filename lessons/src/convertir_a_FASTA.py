@@ -41,7 +41,7 @@ my_file = open(my_file_name)
 dna_txt = my_file.read()
 
 # Abrir y crear un nuevo archivo con extensión .fasta
-fasta_file = open("dna.fasta", "w")
+fasta_file = open((input), "w")
 
 # Escribir en el nuevo archivo el ID y la secuencia de DNA
 fasta_file.write (f">ID_secuencia Especie\n {dna_txt}")
@@ -50,7 +50,13 @@ fasta_file.write (f">ID_secuencia Especie\n {dna_txt}")
 fasta_file.close()
 
 # Comprobar la existencia del archivo FASTA
-my_fasta_file = 'C:/Users/qwerty/Documents/PythonI/lessons/src/dna.fasta'
-my_fasta = open(my_fasta_file)
+my_file_fasta = input('Si deseas corroborar que se creó introduce la dirección del archivo dna.fasta: ')
+
+# Acceder al archivo FASTA
+my_fasta = open(my_file_fasta)
+
+# Leer el archivo
 fasta = my_fasta.read()
+
+# Imprimir en pantalla el contenido 
 print(fasta)
