@@ -3,7 +3,7 @@ NAME
        secuenciaRNA.py
 
 VERSION
-        1.0
+        2.0
 
 AUTHOR
         Ana Marisol García Mejía
@@ -34,8 +34,20 @@ print("¡Hola! Este programa te permite introducir una secuencia de DNA y este b
 
 # Secuencia de DNA en la que se buscará el codón de inicio y de término
 raw_dna = input("Por favor, introduce tu secuencia de DNA: ")
+
+# Con el método upper se cambia a mayúsculas la cadena que introduzca el usuario. 
 dna = raw_dna.upper()
+
+
 def secuencia_mRNA(DNA):
+        """
+        Función que devuelve la posición del codón de inicio y del codón de paro. Además, imprime en pantalla la secuencia de DNA que 
+        será transcrita. 
+
+        Args: 
+        DNA = Argumento que obtiene la secuencia de DNA introducida por el usuario. 
+
+        """
         # Almacenar el codón de inicio
         codon_inicio = 'TAC'
 
