@@ -36,26 +36,24 @@ print('¡Hola! \nEste programa te permite calcular el porcentaje de AT y CG en u
 my_file_name = input('Por favor, introduce la dirección de tu archivo: ')
 
 # Acceder al archivo
-my_file = open(my_file_name)
+with open(my_file_name,'r') as my_file:
 
-# Leer el archivo
-secuenciaDNA = my_file.read()
+    # Leer el archivo
+    secuenciaDNA = my_file.read()
 
-# Quitar los saltos de línea con el método rstrip
-secuenciaDNA = secuenciaDNA.rstrip("\n")
+    # Quitar los saltos de línea con el método rstrip
+    secuenciaDNA = secuenciaDNA.rstrip("\n")
 
-# Obtener la longitud de la secuencia 
-tamaño_dna = len(secuenciaDNA)
+    # Obtener la longitud de la secuencia 
+    tamaño_dna = len(secuenciaDNA)
 
-# Sacar el total de AT y CG contenida en la secuencia de DNA con el método count
-AT = (secuenciaDNA.count('A') + secuenciaDNA.count('T'))
-CG = (secuenciaDNA.count('C') + secuenciaDNA.count('G'))
+    # Sacar el total de AT y CG contenida en la secuencia de DNA con el método count
+    AT = (secuenciaDNA.count('A') + secuenciaDNA.count('T'))
+    CG = (secuenciaDNA.count('C') + secuenciaDNA.count('G'))
 
-# Calcular el porcentaje tanto de AT como CG
-porcentaje_AT = ((AT/tamaño_dna) * 100)
-porcentaje_CG = ((CG/tamaño_dna) * 100)
+    # Calcular el porcentaje tanto de AT como CG
+    porcentaje_AT = ((AT/tamaño_dna) * 100)
+    porcentaje_CG = ((CG/tamaño_dna) * 100)
 
-# Imprimir en pantalla los porcentajes obtenidos
-print(f'El porcentaje de AT es: {porcentaje_AT} y el porcentaje de CG es: {porcentaje_CG}')
-
-
+    # Imprimir en pantalla los porcentajes obtenidos
+    print(f'El porcentaje de AT es: {porcentaje_AT} y el porcentaje de CG es: {porcentaje_CG}')
