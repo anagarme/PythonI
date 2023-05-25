@@ -12,7 +12,7 @@ Sin embargo, si quieres tomar una decisión importante y no tienes algún acompa
 ________
 ### Requisitos
 Para poder ejecutar el programa se requiere tener instalado el siguiente software: 
-- Python version 3.9.2 o superior 
+- Python version 3.9.2 o superior.
 Asimismo, se debe importar la librería random, no obstante esta es importada al ejecutar el programa en la sección *Imports*.
 
 _____
