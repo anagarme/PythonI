@@ -7,4 +7,4 @@ Este proyecto es con fines académicos, los scripts disponibles son para la reso
 prácticas al momento de codificar. 
 
 ## Licencia 
-PythonI utilia la licencia MIT..
+PythonI utilia la licencia MIT.
